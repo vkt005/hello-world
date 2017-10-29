@@ -1,6 +1,8 @@
 {
     "name": "vkt005/hello-world",
     "description": "My First Composr Project",
+  "type": "library",
+  "license": "MIT",
     "authors": [
         {
             "name": "Vivek Tripathi",
@@ -8,8 +10,15 @@
         }
     ],
     "require": {
-"php": ">=5.3.0"
+	"php": ">=5.3.0",
+    	"ext-helloworld": "*"
+
 },
+"require-dev": {
+    "phpunit/phpunit": "3.7.*",
+    "squizlabs/php_codesniffer": "~2.1"
+  },
+
 "autoload": {
         "psr-0": {
             "HelloWorld": "src/"
